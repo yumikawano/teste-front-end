@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Lógica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+<body>
+  <main class="container">
+    <div class="wrapper">
+      <form action="" id="formulario" method="POST" name="formulario">
+        <legend>
+          Teste de Lógica
+        </legend>
+
+      <div class="input-group">
+        <label for="input-name">Nome:</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Digite seu nome"
+          id="name"
+          required
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="input-lastname">Sobrenome:</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Digite seu sobrenome"
+          id="last-name"
+          required
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="input-email">E-mail</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Digite seu e-mail"
+          id="e-mail"
+          required
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="input-phone">Telefone</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="(99) 99999-9999"
+          id="phone"
+          required
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="message">Mensagem</label>
+        <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="33"
+        type="text"
+        placeholder="Escreva aqui sua mensagem"
+        required></textarea>
+      </div>
+   
+      <div class="input-group">
+        <label for="tipo">Seu contato é sobre:</label>
+        <select name="select">
+        <option value="valor0">Informar</option>
+        <option value="valor1">Reclamação</option>
+        <option value="valor2" selected>Dúvida</option>
+        <option value="valor3">Sugestão</option>
+        </select>
+      </div>
+
+        <div class="input-group">
+        <label for="periodo" id="periodo">Qual melhor período para entrar em contato?</label>
+        <input type="checkbox" name="opcao" value="op1"> Manhã
+        <input type="checkbox" name="opcao" value="op2"> Tarde
+        <input type="checkbox" name="opcao" value="op3"> Noite
+        </div>
+
+      <div class="input-group">
+            <label for="contato" id="contato">Entrar em contato através do:</label>
+            <input type="radio" name="opcao" value="op1"> Whatsapp
+            <input type="radio" name="opcao" value="op2"> E-mail
+          </div>
+
+      <button type="button" class="button" onclick="validar()">Enviar</button>
+    </div>
+  </main>
+
+  </aside>
+  <script src="assets/javascript/scripts.js"></script>
+</body>
+</html> 
